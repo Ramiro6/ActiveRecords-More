@@ -5,5 +5,6 @@ class CreateUsers < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
+    add_reference :users, :role, index:true
   end
 end
