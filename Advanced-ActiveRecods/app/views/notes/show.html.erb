@@ -1,0 +1,10 @@
+<h3>All Notes</h3>
+
+<% if @note.any? %>
+    <p>no tienes notas</p>
+<% else %>
+    <% @note.each do |item| %>
+    <br />
+    <%= item.content %>
+    <% end %>
+<% end %>
